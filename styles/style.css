@@ -26,18 +26,14 @@
   margin-inline: auto;
 }
 
-.header,
-.card__article {
-  background-color: var(--background-color);
-  border: var(--border-width) solid var(--border-color);
-}
-
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-block: 100px;
   min-block-size: clamp(327px, 25.6vw, 368px);
+  background-color: var(--background-color);
+  border: var(--border-width) solid var(--border-color);
 }
 
 .header__logo-group {
@@ -73,7 +69,8 @@
 }
 
 .card__article {
-  overflow: hidden;
+  background-color: var(--background-color);
+  border: var(--border-width) solid var(--border-color);
 }
 
 .card__title {
@@ -203,6 +200,8 @@
 }
 
 .button__text {
+  display: block;
+  text-align: center;
   position: relative;
   z-index: 1;
   color: var(--button-text-color);
@@ -313,11 +312,6 @@
   margin: 50px auto 100px;
   padding: 15px 20px;
   cursor: pointer;
-}
-
-.save-button .button__text {
-  display: block;
-  text-align: center;
 }
 
 .save-button__icon {
